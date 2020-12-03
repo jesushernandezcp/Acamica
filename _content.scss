@@ -1,0 +1,119 @@
+@mixin circulos {
+        position: relative;
+        color: white;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        transform: translate(180%,50%);        
+        img{border-radius: 50%; width: 200px;}
+                }
+@mixin sponsor{
+        display: inline-block;
+        position: relative;
+        background-color:white;
+        color: white;
+        border: 1px solid black;;
+        width: 100px;
+        height: 100px;
+        margin: 12px;
+                }       
+
+
+.contenedor
+{
+    
+    background-color:whitesmoke;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 850px;
+    
+
+    h1  { 
+        background-color:whitesmoke;
+        float: left;
+        position: absolute;
+        top: 20px;
+        left:250px;
+        text-align: center;
+        width: 450px;
+        padding: 0px;
+
+        }
+
+    .parrafo{ 
+            
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            padding: 20px;
+            top: 90px;
+            left: 250px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: justify;
+            }   
+            
+    form{ 
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            right: 50px;
+            top: 470px;
+            background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(176,198,163,1) 23%, rgba(235,215,161,1) 69%, rgba(246,202,143,1) 100%);
+            
+            &:hover{ border-radius: 50px;}
+            
+              fieldset{ width: 300px;height: 280px; border: none; }
+              legend{ text-align: center; font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+              label{ display: none;}
+              input{margin-left: 40px; padding: 5px;}
+        }
+
+        iframe{ 
+            width: 350px;
+            height: 350px;
+            position: relative; 
+            top: 480px;
+            left: 270px;
+                }
+        
+            
+    .circulo1{ @include circulos;} 
+    .circulo2{ @include circulos;}
+    .circulo3{ @include circulos;}
+    h3{
+        position: relative;
+        left: 650px;
+        top: -50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        font-size: 100%;
+            
+       }        
+       #orador{text-align: center; width: 30px; height: 30px;}
+                   
+     .sponsors{ 
+                position: relative;
+                width: 400px;
+                height: 445px;
+                top: 340px;
+                left: 250px;
+                .platino_a{ @include sponsor;}
+                .platino_b{ @include sponsor;}
+                .platino_c{ @include sponsor;}
+                .gold_a{ @include sponsor;}
+                .gold_b{ @include sponsor;}
+                .gold_c{ @include sponsor;}
+                .silver_a{ @include sponsor;}
+                .silver_b{ @include sponsor;}
+                .silver_c{ @include sponsor;}
+                
+                h2{ 
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                }                    
+                }
+                       
+}       
+ 
+
+
